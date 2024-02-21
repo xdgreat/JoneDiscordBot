@@ -1,7 +1,8 @@
+// @ts-ignore
 import philosophicalQuotes from "../assets/quotes.js";
 import Discord from "discord.js";
 
-export const execute = async (message) => {
+export const execute = async (message: any) => {
   async function getJoke() {
     const url = "https://icanhazdadjoke.com/";
     const response = await fetch(url, {

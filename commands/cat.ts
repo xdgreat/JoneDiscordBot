@@ -1,6 +1,6 @@
 import Discord from "discord.js";
 
-export const execute = async (message) => {
+export const execute = async (message: any) => {
   const getCat = async () => {
     const response = await fetch("https://api.thecatapi.com/v1/images/search");
     const data = await response.json();
